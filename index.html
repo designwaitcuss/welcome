@@ -187,8 +187,9 @@ a.go{text-decoration:none;display:inline-flex;align-items:center;justify-content
 .plans.duo>.plan{min-width:0}
 .plans.duo .pduo{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
 .plans.duo .pmini .pcap{white-space:normal;line-height:1.3}
-.plans.duo .pbgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
-.plans.duo .pb{white-space:normal;min-width:0;line-height:1.25}
+.plans.duo .pbgrid{grid-template-columns:auto 1fr}
+.plans.duo .pb{gap:4px;padding:5px 7px;min-width:0;line-height:1.25}
+@media (max-width:360px){.plans.duo .pbgrid{grid-template-columns:1fr}}
 .plan .amt .was{font-size:24px;font-weight:700;color:var(--red);text-decoration:line-through;text-decoration-thickness:2px;text-decoration-color:var(--red);margin-right:10px;letter-spacing:-.02em;vertical-align:4px}
 @media (max-width:720px){.plans.duo{grid-template-columns:minmax(0,360px)}}
 @media (max-width:720px){.plans.duo>.plan{interpolate-size:allow-keywords;transition:transform .8s cubic-bezier(.3,.7,.2,1),height .6s ease}}
