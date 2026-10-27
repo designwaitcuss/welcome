@@ -34,6 +34,7 @@ a{color:inherit}
 .hero h1 .u{text-decoration:underline;text-decoration-thickness:4px;text-underline-offset:9px;text-decoration-color:var(--green);text-decoration-skip-ink:none}
 .hero .sub{font-family:var(--display);font-weight:600;font-size:clamp(20px,3vw,26px);color:var(--ink-2);margin-top:20px;letter-spacing:-.01em}
 .hero .sub b{color:var(--ink);font-weight:700}
+@media (max-width:520px){.sub b{display:block;white-space:nowrap}}
 
 .said{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px 10px;text-align:center;margin-top:22px;color:var(--ink-2);font-size:16px}
 .said img{width:30px;height:30px;border-radius:50%;object-fit:cover;border:1px solid var(--line-strong)}
@@ -238,7 +239,6 @@ a.go{text-decoration:none;display:inline-flex;align-items:center;justify-content
     <span class="pill"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5 10 17.5 19 7"/></svg>You're in</span>
     <h1>Congratulations, <span class="u">you're in</span></h1>
     <p class="sub">You made the right choice, <b>let's make this happen.</b></p>
-    <p class="said"><img src="data:image/webp;base64,UklGRooIAABXRUJQVlA4IH4IAAAQJQCdASpgAGAAPlkkj0UjoiGYC4+MOAWEoAwNPyUoyo8NZC1uH0tbhLnhHIt8cP0vhb5E/iWgBk7tI+ssffzrn74BN4DTi5DPSN0WPXvA4/aNUFOiDIPhiTLdpLP6IJSakT3dPNR1Ug3hVFp/9AfIs0UjimzvGo+RqHkeJwXIrwj0Z9mWzbbqIopLNhufFvpgWxBNiwR75w3M2/mNFJyP9LFi+WHu39uKcIZG5ImFlX42hJXDPCkELL+G3O9VuwxZteKNPdVw512tTfbAl/hCkuQmnRPMkKhsqMwFF1S/a5/B/qYVk3fclo6boBihjkPL+WXNUv1UL7x9c4/Yew8EbQH8drqdYKjUXIbNDSM2Vr88fMBmc6uc6zfapXf/dwvfBmG39wl1IO4SvCUMTPDcIAD+/Sm3gStFawZ4foa0zxL7I20nfyTvOgTTVtGd/jdHa16rJ1P/u8DKMCi5osjBgeyWdrseMow1dlnuokReo+VtgXBhZ9Jo0bK51s6tLZ15H/YFh/zJnMW7zefI8dsy6e+zJL3/k1FJQOFG5OVXlVUIgi2WYt9b0hyeI0vxk+BA7iREP3dyatkrDcSjR7r3ZNHvRi58LU9e7LuRy0AhScYktE+i7cwTb9J7fnN2cA/n6Y1PDuEbnyQhuUpNkC/jbJFqgqf+0+CZd9YzYu+P2LO6Ks5+EPmq5TKmBlqZlRz/+dJ9Q3vn/KXj3KC4VcPX1UUbrQ99eJmc8veVmwbMe4trzMDtMLaOLrv/GciB2j7x0bBcy0tP8waB5eUb2LrU1TrDeDCO26VEAkIci5dBeXXBmaF/2vnvusePtl+jO922Wgm4nRHmaSFtLgICoUqSrEnf3Ndg+yQQEhVLHy23OCBs1alPmFOm3Bw7+FC0n30K1qccnTlmiN5TIU+8SoJYRqX8TJlhQHxXYAsB3yQnfJwvuGea9eA0QGr9GA/ZGzFeaOBalyNVnWHNjpF2Rat+UHYUWDcce3aj16jf7P1Ra8X72Y5cdL9A4RHR5ooSTpe+k/P5DJb3oJVjmVEVLSJYuoALyT32hPQZU05z4gl1n8mtqPRuTzqAsXfmQpfw9Bz3YOzYE7SYDEWSrhnHF84tC4XFdLVwh3N63SLvAO2BU3DAJFP2ScAc1WIxM2oIAJGNFUg7d6qPO3+Ih5F8+OdiB9SP4YCLif2JYbN22GCgRO3YYU0ELHC6Xtxvp6i0Melui1z7sDByopbj+0TjJA7XgkfPu9hxkTA+l8cjVI20yhSXDNjv2+HRD+Nae1x08S3QfeKseM6KWLOOyH7wxUHWpctZIVUn/K46BJuS0y2OFoHCWGwmm7yIrtLWZAcH+ZF85VI7EYMvohYxKJLT+/U8ZtnMuiUaf02sRFyabUB0k3sAozamz5FX2dRrINEtiDv2f/wVfNnmdjn/3vp7eob0wiRkHyas7R05RjnVR0kbxBBAArAvaooUrQ8PzKP1fZdY5sEpKUYuu/102wxBrMPQC04Oh4gbJANUweDFOYTDjdTYDlXVRMtqJZ8QX5Zz6bD/fZrZg3qmsg0FvNPUvpxc1r8ZSavzffUS9rorB/8tRy1EcyiX3fKSNdgDsAXAA6HRCX5+ONXezFZBdq+zdrYydrW39FrTZ8+2jVUGytGf59n3sfER4Bm01zCKMklYopD8JxgtMkM28CtILnuVCljA4aQuEEe4JOCRNEXudFAxcjJ/wYOgaE9xIIX6Qp9VkqkvDiSXuEKz/aqxa164sovEnTeGffpjqX1vHQmvnw/nu78gI4ecXaXqLN9HdMosFC0fIhlaib8hHPnLZ3CMvjwh8RNroTCdB8RbJJRXj86ZLgtSxdJK9IvlM1YxY7QMRynm39cIKSn436QARjQNve/3E23lZZa8uvXbNOqZVK5FlvJzHE8Zkqn7th5TdswsRVnt+7VH/dTsOGg7Xavst40MgWF8nUFTKkj7jiWjbYVLYOThZM+1sbP/UFW4Ld3seD/RMTI4PefpKeU3x1Wr7WlRNbKE5EHDVJFF4N0YSHqaWMiGr/sgCU1TSuCaPm974f6pZsSaD/iZreFJiIRl1nig/jtOKCdhDFWASYaNSBmDhSzHJ1mFZoGupzBIVo3x2Zla91FtK76xl3b66nBPDwo3b1wW5VJ+FYDtApB5B7YX/5m1B3fjcGZx09Cl+RsZNXKnkQB6MY/lqUBNl8mrxXV6wZuYXfqxpGicaO2b/K9zPJICJcfQ0CDh7S1ri6H7cNIe0MwdggxLc5tTnpmcwEWBIdr72ei2DRDZM0v62HoOKIOFgk0eZrYQ6t3eXiFOxPOGrXgSjS9tpmfsLCJND0uCoeoN8p074iSgdG/9Hk80aNAOsTHYL2eKYrilrU+EQnGdQz5srWUbCXvC4cEKFG1zwExRrEibSMY25au0itPG68WxwlPY3uy0R1mZKY8vP/fajdE8+hgiRZblqtvIRAGWnrwF/qIk8L9QegLRfuZEvY/hXqoexTMd84jEzjhFWkDCZKLGkYEb/YmFw7vkIuH9q2LDcmQSVQ97lkxAHhiLDKBRyqkFuwkcQxpX451VE5Ca9Vd6H9rTVRjvm4sAWemzPAoDRwBWxzg5M9VuXTazHjmz+hZ+R+l5lwQrBRQZQaR2VoqS6qoq+QJya/NOcln9bsP63CatUK+pPJrk2qigrGktoGAATOo0RAelMRBeUt2+/iFfgqBUNPz12mVTqZq9/85Xuqnl4WWy5vSq3RRUv9BHkatxXLjV34uNXU6sGZamJPMBxG6ulPz3zMF/yPtXlhwkOksN9RY/GKG6l3J96dyWUOKi7E8fxcRaR1Z+P1K0mZgWOP6+hMNUnlIVI94mUWPA7eYgEbFyE+1flw7zbr68xiYbev6NgWN1B8AVuhIkVnV0cL4/pqrwFNAAAA==" alt=""><span class="hand">Lauri</span><span>is already looking forward to your first customer</span></p>
   </header>
 
   <ol class="steps">
@@ -269,7 +269,7 @@ a.go{text-decoration:none;display:inline-flex;align-items:center;justify-content
           <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 8.5v7M8.5 12h7"/></svg><span>Top-ups</span></li>
         </ul>
       </div>
-      <div class="pgo"><span class="gowrap"><span class="flare2" aria-hidden="true"></span><span class="flare" aria-hidden="true"></span><a class="go" id="pay-29" href="https://buy.stripe.com/5kQ3cv99628l7xO4fHgfu01" target="_blank" rel="noopener">Pay €29 a month →</a></span></div>
+      <div class="pgo"><span class="gowrap"><span class="flare2" aria-hidden="true"></span><span class="flare" aria-hidden="true"></span><a class="go" id="pay-29" href="https://buy.stripe.com/5kQ3cv99628l7xO4fHgfu01" target="_blank" rel="noopener">Plug me in →</a></span></div>
     </article>
     <article class="plan ftrack">
       <div class="ptop"><span class="tag">Founding members</span><h3 class="name">MyMatrix Community</h3><div class="amt"><s class="was" aria-label="was €500">€500</s><span>€200</span><small>/month</small></div></div>
@@ -285,7 +285,7 @@ a.go{text-decoration:none;display:inline-flex;align-items:center;justify-content
         <p class="pbhd">What's inside</p>
         <div class="pbgrid"><span class="pb"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18.5h16"/><path d="m5 14.5 4-4 3 3 6-6.5"/><path d="M14.5 7H18v3.5"/></svg>Kickoff audit</span><span class="pb"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.4-3 7.6-7 9-4-1.4-7-4.6-7-9V6Z"/></svg>Daily mentor</span><span class="pb"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M14.5 9.2c-.5-.8-1.5-1.2-2.5-1.2-1.4 0-2.5.8-2.5 2s1.1 1.6 2.5 2 2.5.8 2.5 2-1.1 2-2.5 2c-1.1 0-2.1-.5-2.6-1.3M12 6.5V8M12 16v1.5"/></svg>1:1 with Lauri</span><span class="pb"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="3.5"/><path d="M5 19.5c1.2-3.2 3.8-5 7-5s5.8 1.8 7 5"/></svg>Founders' room</span></div>
       </div>
-      <div class="pgo"><span class="gowrap"><span class="flare2" aria-hidden="true"></span><span class="flare" aria-hidden="true"></span><a class="go" id="pay-200" href="https://buy.stripe.com/cNi28rfxueV7cS8cMdgfu02" target="_blank" rel="noopener">Pay €200 a month →</a></span></div>
+      <div class="pgo"><span class="gowrap"><span class="flare2" aria-hidden="true"></span><span class="flare" aria-hidden="true"></span><a class="go" id="pay-200" href="https://buy.stripe.com/cNi28rfxueV7cS8cMdgfu02" target="_blank" rel="noopener">Plug me in →</a></span></div>
     </article>
   </div>
       </div>
@@ -356,7 +356,7 @@ a.go{text-decoration:none;display:inline-flex;align-items:center;justify-content
   var go=document.getElementById("pay-29"),T=[{c:"1,000",p:29,u:"https://buy.stripe.com/5kQ3cv99628l7xO4fHgfu01"},{c:"3,000",p:79},{c:"10,000",p:199}],cur=-1,drag=false,stops=el.querySelectorAll(".cstop");
   var set=function(i){i=Math.max(0,Math.min(T.length-1,i));if(i===cur)return;cur=i;el.style.setProperty("--i",i);
     for(var k=0;k<stops.length;k++)stops[k].classList.toggle("on",k===i);
-    amt.textContent="€"+T[i].p;if(go){if(T[i].u){go.href=T[i].u;go.textContent="Pay €"+T[i].p+" a month →";go.classList.remove("off");go.removeAttribute("aria-disabled");}else{go.removeAttribute("href");go.textContent="€"+T[i].p+" plan opens soon";go.classList.add("off");go.setAttribute("aria-disabled","true");}}cap.textContent=T[i].c+" credits a month";
+    amt.textContent="€"+T[i].p;if(go){if(T[i].u){go.href=T[i].u;go.textContent="Plug me in →";go.classList.remove("off");go.removeAttribute("aria-disabled");}else{go.removeAttribute("href");go.textContent="€"+T[i].p+" plan opens soon";go.classList.add("off");go.setAttribute("aria-disabled","true");}}cap.textContent=T[i].c+" credits a month";
     el.setAttribute("aria-valuenow",i);el.setAttribute("aria-valuetext",T[i].c+" credits for €"+T[i].p+" a month");};
   var fromX=function(x){var r=el.getBoundingClientRect();return Math.floor((x-r.left)/r.width*T.length);};
   el.addEventListener("pointerdown",function(e){drag=true;try{el.setPointerCapture(e.pointerId);}catch(_){}set(fromX(e.clientX));});
