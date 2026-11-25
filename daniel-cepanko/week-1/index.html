@@ -60,7 +60,7 @@ h2{font:700 clamp(25px,3.2vw,34px)/1.12 Arial,Helvetica,sans-serif;letter-spacin
 .arr.right::after{content:'';position:absolute;right:-1px;top:50%;transform:translateY(-50%);border-left:7px solid var(--flow);border-top:5px solid transparent;border-bottom:5px solid transparent}
 
 /* 1. connect */
-.connect{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:stretch}
+.connect{max-width:620px}
 .steps{display:flex;flex-direction:column}
 .cstep{display:flex;gap:14px;align-items:flex-start;padding:16px}
 .cstep .t{font:700 16px/1.35 Arial,Helvetica,sans-serif;padding-top:2px}
@@ -70,10 +70,6 @@ h2{font:700 clamp(25px,3.2vw,34px)/1.12 Arial,Helvetica,sans-serif;letter-spacin
 .copy{flex:none;height:32px;padding:0 14px;border:0;border-radius:8px;background:var(--ink);color:#fff;font:700 13px/1 Arial,Helvetica,sans-serif;cursor:pointer;transition:transform .16s ease-out}
 .copy:active{transform:scale(.96)}
 .check{display:inline-grid;place-items:center;flex:none;width:38px;height:38px}
-.video{border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;min-height:260px;padding:24px;text-align:center}
-.video .play{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;outline:1.5px dashed var(--dash);outline-offset:-1.5px}
-.video .play svg{width:20px;height:20px;margin-left:3px}
-.video b{font:700 16px/1.3 Arial,Helvetica,sans-serif;color:var(--muted)}
 
 /* 2. morning */
 .morning{padding:18px 10px 20px}
@@ -212,8 +208,7 @@ h2{font:700 clamp(25px,3.2vw,34px)/1.12 Arial,Helvetica,sans-serif;letter-spacin
   section{margin-top:80px}
   .vis{margin-top:22px}
   .sub{font-size:17px}
-  .connect,.math,.ways,.skills,.eq{grid-template-columns:1fr}
-  .video{min-height:0;aspect-ratio:16/9}
+  .math,.ways,.skills,.eq{grid-template-columns:1fr}
   .road{grid-template-columns:1fr;gap:22px}
   .road::before{left:25px;right:auto;top:20px;bottom:40px;width:1.5px;height:auto}
   .stop{display:grid;grid-template-columns:38px minmax(0,1fr);column-gap:14px;align-items:center;text-align:left;padding:0 6px}
@@ -298,10 +293,6 @@ h2{font:700 clamp(25px,3.2vw,34px)/1.12 Arial,Helvetica,sans-serif;letter-spacin
           <span class="check"><svg width="34" height="34" viewBox="0 0 34 34"><circle cx="17" cy="17" r="15.2" fill="none" stroke="#efeff0" stroke-width="2.6"/><path d="M11.8 17.4l3.4 3.4 7-7.4" fill="none" stroke="#151618" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
           <div class="t">Sign in with your MyMatrix account and allow it</div>
         </div>
-      </div>
-      <div class="video dashed" aria-label="Video, coming">
-        <span class="play"><svg viewBox="0 0 20 20"><path d="M5 3.2l11.5 6.8L5 16.8z" fill="#9a9ca0"/></svg></span>
-        <b>40-second video, coming</b>
       </div>
     </div>
   </section>
@@ -486,7 +477,6 @@ h2{font:700 clamp(25px,3.2vw,34px)/1.12 Arial,Helvetica,sans-serif;letter-spacin
   const OPTS = [
     {nm: 'Pausiq', sub: '€6.99 a month', k: 144, k10: '1,431', r: '1 in 4', logo: 'l-pausiq'},
     {nm: 'Bundle', sub: '€49 once', k: 21, k10: '205', r: '1 in 29'},
-    {nm: 'Bundle', sub: '€39 once', k: 26, k10: '257', r: '1 in 23'},
     {nm: 'Bundle', sub: '€29 once', k: 35, k10: '345', r: '1 in 17'},
     {nm: 'Done for you', sub: '€200', k: 5, k10: '50', r: '1 in 120'},
     {nm: 'Done for you', sub: '€100', k: 10, k10: '100', r: '1 in 60'}
